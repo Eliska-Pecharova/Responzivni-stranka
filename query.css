@@ -1,0 +1,87 @@
+@media (max-width: 768px) {
+  body {
+    padding: 8px;
+  }
+
+  /* NAVIGATION */
+  .main-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1em;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 32px;
+    background-color: var(--bc-color);
+    border-radius: 12px;
+    padding: 1em;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    z-index: 101;
+    cursor: pointer;
+  }
+
+  .hamburger img {
+    width: 32px;
+    height: 32px;
+  }
+
+  /* HERO */
+  .hero {
+    height: auto;
+    padding: 24px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-button {
+    font-size: 0.95rem;
+    padding: 8px 16px;
+  }
+
+  /* CARDS */
+  .card-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 90%;
+  }
+
+  /* IMAGES */
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* FOOTER */
+  footer {
+    font-size: 0.85rem;
+    padding: 12px;
+  }
+}
