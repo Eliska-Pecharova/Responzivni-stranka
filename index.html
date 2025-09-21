@@ -1,38 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responzivní stránka</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="query.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&family=Ubuntu:wght@400;700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <nav>
-      <ul>
-        <li href="#">Home</li>
-        <li href="#">About Us</li>
-        <li href="#">Explore</li>
-        <li href="#">Contact Us</li>
-      </ul>
-      <div class="icon"><img src="image/icone.png" /></div>
-    </nav>
-    <div class="hero-section">
-      <div class="hero-text">
-        <h1 class="hero-subtitle">Exploring Icelandic Villages</h1>
-        <h2 class="hero-title">Where Nature and Culture Converge</h2>
+    <header>
+      <nav class="main-nav">
+        <div class="nav-logo">
+          <img src="image/logo.png" alt="Logo Exploring Icelandic Villages" />
+        </div>
+
+        <div class="hamburger" onclick="toggleMenu()">
+          <img src="image/icone.png" alt="hamburger menu" />
+        </div>
+
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#">Domov</a></li>
+          <li><a href="#">O nás</a></li>
+          <li><a href="#">Prozkoumat</a></li>
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <section class="hero">
+        <div class="hero-content">
+          <h1 class="hero-subtitle">Prozkoumávání islandských vesnic</h1>
+          <h2 class="hero-title">Kde se prolíná příroda a kultura</h2>
+          <a href="#villages" class="hero-button">Zjistit více</a>
+        </div>
+      </section>
+    </header>
+
+    <section class="intro-text">
+      <p>
+        Vítejte na stránce věnované malebným islandským vesnicím, kde se snoubí
+        přírodní krása s bohatou historií. Objevte místa, která vás okouzlí svou
+        atmosférou, tradicemi a dechberoucí krajinou.
+      </p>
+    </section>
+
+    <section id="villages" class="card-section">
+      <div class="card">
+        <img src="image/Stykkishólmur.jpeg" alt="Vesnice 1" />
+        <h3>Stykkishólmur</h3>
+        <p>Malé přístavní město s barevnými domky a výhledem na fjordy.</p>
       </div>
-    </div>
-    <div class="image-container">
-      <img
-        src="https://images.unsplash.com/photo-1512419180521-2c5585bdf851?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80"
-        alt=""
-      />
-    </div>
+      <div class="card">
+        <img src="image/Siglufjörður.jpeg" alt="Vesnice 2" />
+        <h3>Siglufjörður</h3>
+        <p>Historické rybářské město obklopené horami a mořem.</p>
+      </div>
+      <div class="card">
+        <img src="image/Vík í Mýrdal.jpg" alt="Vesnice 3" />
+        <h3>Vík í Mýrdal</h3>
+        <p>Vesnice známá černými plážemi a dramatickými skalními útvary.</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 Eliška Pecharová | Projekt Island</p>
+    </footer>
+    <script src="script.js" defer></script>
   </body>
 </html>
